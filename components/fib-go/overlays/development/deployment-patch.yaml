@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fib-go
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/fib-go@sha256:8522e259047c7705a1130e4fbcad4aa561d2b417fe861ad3e7db5190237074a5
+        name: container-image
+        resources: {}
+status: {}
